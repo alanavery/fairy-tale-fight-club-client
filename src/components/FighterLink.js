@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
 function FighterLink(props) {
-  const linkTo = `/show/${props.fighter._id}`;
+  const linkTo = `/fighters/${props.fighter._id}`;
   return (
     <div className="link-fighter">
       <Link to={linkTo}>{props.fighter.name}</Link>

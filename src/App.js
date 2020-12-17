@@ -57,7 +57,7 @@ class App extends Component {
             <Home fighters={this.state.fighters} />
           </Route>
           <Route
-            path="/show/:id"
+            path="/fighters/:id"
             render={(routeProps) => {
               const fighter = this.state.fighters.find((fighter) => {
                 return fighter._id === routeProps.match.params.id;

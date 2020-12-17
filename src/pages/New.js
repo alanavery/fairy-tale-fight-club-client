@@ -39,7 +39,7 @@ class New extends Component {
       });
       let json = await response.json();
       this.props.reload();
-      this.props.history.push(`/show/${json.fighter._id}`);
+      this.props.history.push(`/fighters/${json.fighter._id}`);
     } catch (err) {
       console.log(err);
     }

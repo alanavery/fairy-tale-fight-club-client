@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Show extends Component {
   render() {
     if (!this.props.fighter) {
-      return <div>Loading...</div>;
+      return <div>Fighter info is coming...</div>;
     }
 
     const weaponsList = this.props.fighter.weapons.map((weapon) => {
